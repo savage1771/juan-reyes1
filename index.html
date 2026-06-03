@@ -1,17 +1,19 @@
+```html
 <!DOCTYPE html>
 <html lang="es">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Un Mensaje Especial</title>
+<title>Algo que hice una noche</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
+
 :root{
 --primary:#ff4d88;
 --secondary:#ff7eb3;
---glass:rgba(255,255,255,.15);
+--glass:rgba(255,255,255,.12);
 --text:#fff;
 }
 
@@ -42,10 +44,10 @@ padding:20px;
 
 .card{
 width:100%;
-max-width:700px;
+max-width:750px;
 background:var(--glass);
 backdrop-filter:blur(20px);
-border:1px solid rgba(255,255,255,.2);
+border:1px solid rgba(255,255,255,.15);
 border-radius:30px;
 padding:40px;
 text-align:center;
@@ -73,11 +75,12 @@ padding:8px 18px;
 border-radius:50px;
 background:rgba(255,255,255,.15);
 margin-bottom:20px;
+font-size:.9rem;
 }
 
 h1{
-font-size:clamp(2rem,6vw,3.8rem);
-margin-bottom:15px;
+font-size:clamp(2.2rem,7vw,4rem);
+margin-bottom:20px;
 }
 
 .highlight{
@@ -87,15 +90,15 @@ background:linear-gradient(90deg,#ffb3d1,#ffffff);
 }
 
 p{
-line-height:1.8;
+line-height:1.9;
 font-size:1.05rem;
 opacity:.95;
 }
 
 .buttons{
 display:flex;
-gap:15px;
 justify-content:center;
+gap:15px;
 flex-wrap:wrap;
 margin-top:30px;
 }
@@ -118,26 +121,26 @@ color:white;
 .secondary{
 background:rgba(255,255,255,.15);
 color:white;
-border:1px solid rgba(255,255,255,.2);
+border:1px solid rgba(255,255,255,.15);
 }
 
 button:hover{
-transform:translateY(-3px) scale(1.03);
+transform:translateY(-4px);
 }
 
 .message{
-margin-top:30px;
 display:none;
+margin-top:30px;
 padding:25px;
 border-radius:20px;
 background:rgba(255,255,255,.08);
-animation:fade .7s ease;
+animation:fade .8s ease;
 }
 
 @keyframes fade{
 from{
 opacity:0;
-transform:translateY(15px);
+transform:translateY(20px);
 }
 to{
 opacity:1;
@@ -151,11 +154,25 @@ font-size:1.2rem;
 font-weight:700;
 }
 
+.counter{
+margin-top:25px;
+font-size:1rem;
+font-weight:600;
+opacity:.9;
+}
+
+footer{
+margin-top:25px;
+opacity:.7;
+font-size:.9rem;
+}
+
 .heart{
 position:fixed;
 pointer-events:none;
 font-size:20px;
 animation:float 6s linear forwards;
+z-index:1;
 }
 
 @keyframes float{
@@ -169,70 +186,112 @@ opacity:0;
 }
 }
 
-.counter{
-margin-top:25px;
-font-size:1.1rem;
-font-weight:600;
-}
-
-footer{
-margin-top:25px;
-opacity:.7;
-font-size:.9rem;
-}
 </style>
 </head>
+
 <body>
 
 <div class="card">
 
-<div class="badge">✨ Mensaje Especial ✨</div>
+<div class="badge">
+✨ Algo que quería compartir ✨
+</div>
 
 <h1>
-Hola,
-<span class="highlight">eres increíble</span>
+Hola ✨
 </h1>
 
 <p>
-Quizás esta sea solo una página web, pero detrás de ella hay tiempo,
-esfuerzo y la intención de sacarte una sonrisa.
-Entre millones de páginas en internet, esta fue creada especialmente
-para ti.
+No soy muy bueno diciendo algunas cosas directamente,
+así que decidí hacerlo de una forma diferente.
+
+La mayoría de las personas envían un mensaje.
+
+Yo terminé creando una página completa.
+
+Puede sonar exagerado,
+pero pensé que valía más la pena dedicar tiempo a algo único
+que escribir algo que terminaría perdiéndose entre cientos de conversaciones.
 </p>
 
 <div class="counter" id="counter"></div>
 
 <div class="buttons">
+
 <button class="primary" onclick="revealMessage()">
-Descubrir mensaje ❤️
+📩 Abrir mensaje
 </button>
 
 <button class="secondary" onclick="playMusic()">
 🎵 Música
 </button>
+
 </div>
 
 <div class="message" id="message">
-<p>
-No sé qué tan lejos llegue esta página,
-pero sí sé que algunas personas hacen que los días sean más interesantes,
-más bonitos y más memorables.
 
-Si estás leyendo esto, quería que supieras que llamas mi atención de una forma muy especial.
+<h2 style="margin-bottom:20px;">
+Una pequeña carta
+</h2>
+
+<p>
+Si llegaste hasta aquí,
+supongo que al menos te dio curiosidad abrir esta página.
+
+Y la verdad,
+eso ya significa bastante.
+</p>
+
+<br>
+
+<p>
+No hice esto para impresionar a nadie.
+
+Lo hice porque algunas personas hacen que valga la pena invertir tiempo en los detalles.
+
+Y porque en un mundo donde todo va tan rápido,
+me pareció bonito detenerme un momento para crear algo diferente.
+</p>
+
+<br>
+
+<p>
+No sé cuánto tiempo conservarás este enlace.
+
+Quizás unos minutos.
+
+Quizás unas horas.
+
+Quizás lo olvides mañana.
+
+Pero mientras exista,
+quería dejar escrito algo simple:
+</p>
+
+<br>
+
+<p style="font-size:1.2rem;font-weight:600;">
+Me alegra haberte conocido.
+</p>
+
+<br>
+
+<p>
+Y gracias por dedicar unos minutos de tu tiempo a leer algo que fue hecho especialmente por mí.
 </p>
 
 <div class="signature">
 — Juan Reyes ✨
 </div>
+
 </div>
 
 <footer>
-Creado por Juan Reyes
+Hecho por Juan Reyes una noche cualquiera.
 </footer>
 
 </div>
 
-<!-- Reemplaza musica.mp3 por tu archivo -->
 <audio id="music" loop>
 <source src="Lovers Rock.mp3" type="audio/mpeg">
 </audio>
@@ -244,33 +303,16 @@ document.getElementById("message").style.display="block";
 }
 
 function playMusic(){
+
 const music=document.getElementById("music");
 
 if(music.paused){
 music.play();
-alert("🎵 Música activada");
 }else{
 music.pause();
 }
+
 }
-
-function createHeart(){
-
-const heart=document.createElement("div");
-heart.classList.add("heart");
-heart.innerHTML=["❤️","✨","💖","💕"][Math.floor(Math.random()*4)];
-
-heart.style.left=Math.random()*100+"vw";
-heart.style.bottom="-30px";
-
-document.body.appendChild(heart);
-
-setTimeout(()=>{
-heart.remove();
-},6000);
-}
-
-setInterval(createHeart,500);
 
 const startDate=new Date("2025-01-01");
 
@@ -283,10 +325,31 @@ const diff=now-startDate;
 const days=Math.floor(diff/(1000*60*60*24));
 
 document.getElementById("counter").innerHTML=
-"✨ " + days + " días acumulando historias y experiencias";
+"✨ " + days + " días desde que esta idea apareció de la nada";
 }
 
 updateCounter();
+
+function createHeart(){
+
+const heart=document.createElement("div");
+
+heart.classList.add("heart");
+
+heart.innerHTML=["❤️","✨","💖","💕"][Math.floor(Math.random()*4)];
+
+heart.style.left=Math.random()*100+"vw";
+heart.style.bottom="-30px";
+
+document.body.appendChild(heart);
+
+setTimeout(()=>{
+heart.remove();
+},6000);
+
+}
+
+setInterval(createHeart,500);
 
 document.addEventListener("click",(e)=>{
 
@@ -295,6 +358,7 @@ for(let i=0;i<3;i++){
 const spark=document.createElement("div");
 
 spark.classList.add("heart");
+
 spark.innerHTML="✨";
 
 spark.style.left=e.clientX+"px";
@@ -305,10 +369,13 @@ document.body.appendChild(spark);
 setTimeout(()=>{
 spark.remove();
 },3000);
+
 }
+
 });
 
 </script>
 
 </body>
 </html>
+```
